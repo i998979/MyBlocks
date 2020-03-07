@@ -1,0 +1,18 @@
+main: to.epac.factorycraft.myblocks.MyBlocks
+version: 0.2.0
+name: MyBlocks
+author: i998979
+description: Create your custom block with resource packs in server
+api-version: 1.13
+
+commands:
+  MyBlocks:
+    aliases: [mb, mblock, mbs]
+    description: Main command
+permissions:
+  MyBlocks.Admin:
+    default: op
+    description: Give access to do all commands
+  MyBlocks.Gui:
+    default: true
+    description: Give access to Gui commands

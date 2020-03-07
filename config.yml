@@ -1,0 +1,1035 @@
+MyBlocks:
+  Blocks:
+    Bamboo:
+      Id: 1
+      Sounds:
+        Place: "block.anvil.destroy world 1 5"
+        Break: "block.anvil.break world 1 5"
+        Step: "block.anvil.step world 1 5"
+        Left: "block.anvil.use world 1 5"
+        Right: "block.anvil.hit world 1 5"
+        Left_Sneak: "block.anvil.step world 1 5"
+        Right_Sneak: "block.anvil.fall world 1 5"
+      Commands:
+        Left:
+        - c:say left clicked
+        Left_Sneak:
+        - c:say sneaky left clicked
+        Right:
+        - c:say %player% did you see me?
+        - list
+        Right_Sneak:
+        - c:say sneaky right clicked
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 1
+      Loots:
+      - ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: GHAST_TEAR
+        amount: 64
+      - ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: GHAST_TEAR
+        amount: 64
+    BarrelOn:
+      Id: 2
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 3
+    BarrelOff:
+      Id: 3
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 2
+      Loots:
+      - ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 2
+    Bell1:
+      Id: 4
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 4
+    Bell2:
+      Id: 5
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 5
+    Furnace1:
+      Id: 6
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 6
+    Furnace2:
+      Id: 7
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 7
+    Furnace3:
+      Id: 8
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 8
+    Furnace4:
+      Id: 9
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 9
+    Furnace5:
+      Id: 10
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 10
+    Furnace6:
+      Id: 11
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 11
+    Furnace7:
+      Id: 12
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 12
+    Furnace8:
+      Id: 13
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 13
+    Furnace9:
+      Id: 14
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '15':
+      Id: 15
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '16':
+      Id: 16
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '17':
+      Id: 17
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '18':
+      Id: 18
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '19':
+      Id: 19
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '20':
+      Id: 20
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '21':
+      Id: 21
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '22':
+      Id: 22
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '23':
+      Id: 23
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '24':
+      Id: 24
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '25':
+      Id: 25
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '26':
+      Id: 26
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '27':
+      Id: 27
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '28':
+      Id: 28
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '29':
+      Id: 29
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '30':
+      Id: 30
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '31':
+      Id: 31
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '32':
+      Id: 32
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '33':
+      Id: 33
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '34':
+      Id: 34
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '35':
+      Id: 35
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '36':
+      Id: 36
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '37':
+      Id: 37
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '38':
+      Id: 38
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '39':
+      Id: 39
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '40':
+      Id: 40
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '41':
+      Id: 41
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '42':
+      Id: 42
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '43':
+      Id: 43
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '44':
+      Id: 44
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '45':
+      Id: 45
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '46':
+      Id: 46
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '47':
+      Id: 47
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '48':
+      Id: 48
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '49':
+      Id: 49
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '50':
+      Id: 50
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '51':
+      Id: 51
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '52':
+      Id: 52
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '53':
+      Id: 53
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '54':
+      Id: 54
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14
+    '55':
+      Id: 55
+      Tool:
+        ==: org.bukkit.inventory.ItemStack
+        v: 1631
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          Unbreakable: true
+          Damage: 14

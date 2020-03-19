@@ -67,7 +67,6 @@ public class ModifyGui implements MyBlocksGui {
 			player.openInventory(new ConfirmGui(modifyingId).getInventory());
 		}
 		else if (clicked.equals(GuiButton.getBlockId())) {
-			// Open Sign GUI for modifying the Block Id
 			player.sendMessage(ChatColor.GREEN + "Please enter the new Block Id of MyBlocks.");
 			
 			SignGUI signgui = new SignGUI()
@@ -90,7 +89,6 @@ public class ModifyGui implements MyBlocksGui {
 			signgui.show(player);
 		}
 		else if (clicked.equals(GuiButton.getId())) {
-			// TODO - Open Sign GUI for modifying the Id
 			player.sendMessage(ChatColor.GREEN + "Please enter the new Id of MyBlocks.");
 			
 			SignGUI signgui = new SignGUI()

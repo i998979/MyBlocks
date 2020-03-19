@@ -2,7 +2,6 @@ package to.epac.factorycraft.myblocks.config;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.inventory.ItemStack;
@@ -128,9 +127,9 @@ public class MyBlocksConfig {
 	}
 	public static void setId(String from, String to) {
 		ConfigurationSection section = plugin.getConfig().getConfigurationSection("MyBlocks.Blocks." + from);
-		Map<String, Object> values = section.getValues(true);
+		Object values = section.get("");
 		
-		section.set("MyBlocks.Blocks." + from, null);
+		plugin.getConfig().set("MyBlocks.Blocks." + from, null);
 		plugin.getConfig().set("MyBlocks.Blocks." + to, values);
 		plugin.saveConfig();
 	}

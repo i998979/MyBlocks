@@ -38,9 +38,12 @@ public class BreakHandler implements Listener {
 		event.setDropItems(false);
 		
 		if (item.getItemMeta() instanceof Damageable) {
-			Damageable dmgable = (Damageable) item.getItemMeta();
-			dmgable.setDamage(dmgable.getDamage() + 1);
-			item.setItemMeta((ItemMeta) dmgable);
+			if (!item.getItemMeta().isUnbreakable()) {
+				Damageable dmgable = (Damageable) item.getItemMeta();
+				
+				dmgable.setDamage(dmgable.getDamage() + 1);
+				item.setItemMeta((ItemMeta) dmgable);
+			}
 		}
 		
 		// Loop through all the Mushroom Blocks

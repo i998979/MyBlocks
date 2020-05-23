@@ -50,7 +50,7 @@ public class SignGUI {
 		loc.setY(0);
 		block = loc.getBlock();
 		
-		player.sendBlockChange(loc, Material.SIGN.createBlockData());
+		player.sendBlockChange(loc, Material.OAK_SIGN.createBlockData());
 		
 		PacketContainer openSignEditor = MyBlocks.protocolManager.createPacket(
 			PacketType.Play.Server.OPEN_SIGN_EDITOR);

@@ -45,7 +45,7 @@ public class PlaceHandler implements Listener {
         for (String id : MyBlocksConfig.getBlocks()) {
         	ItemStack tool = MyBlocksConfig.getTool(id);
         	
-        	if (item.equals(tool)) {
+        	if (item.isSimilar(tool)) {
         		event.setCancelled(true);
         		
         		// TODO - Calculate facing's coordinate, then add/subtract player's body(0.3)

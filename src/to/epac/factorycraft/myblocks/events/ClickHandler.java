@@ -48,23 +48,37 @@ public class ClickHandler implements Listener {
 		List<String> cmds = new ArrayList<>();
 		switch (action) {
 		case LEFT_CLICK_BLOCK:
-			if (!player.isSneaking()) {
+			if (player.isSneaking()) {
 				MyBlocksUtils.playSound(player, id, SoundType.LEFT_SNEAK);
-				cmds.addAll(MyBlocksConfig.getLeftCommands(id));
-			}
-			else {
+				
+				if (!MyBlocksConfig.getLeftSneakCommands(id).isEmpty()) {
+					cmds.addAll(MyBlocksConfig.getLeftSneakCommands(id));
+					event.setCancelled(true);
+				}
+			} else {
 				MyBlocksUtils.playSound(player, id, SoundType.LEFT);
-				cmds.addAll(MyBlocksConfig.getLeftSneakCommands(id));
+				
+				if (!MyBlocksConfig.getLeftCommands(id).isEmpty()) {
+					cmds.addAll(MyBlocksConfig.getLeftCommands(id));
+					event.setCancelled(true);
+				}
 			}
 			break;
 		case RIGHT_CLICK_BLOCK:
-			if (!player.isSneaking()) {
-				MyBlocksUtils.playSound(player, id, SoundType.RIGHT);
-				cmds.addAll(MyBlocksConfig.getRightCommands(id));
-			}
-			else {
+			if (player.isSneaking()) {
 				MyBlocksUtils.playSound(player, id, SoundType.RIGHT_SNEAK);
-				cmds.addAll(MyBlocksConfig.getRightSneakCommands(id));
+				
+				if (!MyBlocksConfig.getRightSneakCommands(id).isEmpty()) {
+					cmds.addAll(MyBlocksConfig.getRightSneakCommands(id));
+					event.setCancelled(true);
+				}
+			} else {
+				MyBlocksUtils.playSound(player, id, SoundType.RIGHT);
+				
+				if (!MyBlocksConfig.getRightCommands(id).isEmpty()) {
+					cmds.addAll(MyBlocksConfig.getRightCommands(id));
+					event.setCancelled(true);
+				}
 			}
 			break;
 		default:

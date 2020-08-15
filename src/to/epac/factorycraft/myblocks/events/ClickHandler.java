@@ -53,14 +53,14 @@ public class ClickHandler implements Listener {
 				
 				if (!MyBlocksConfig.getLeftSneakCommands(id).isEmpty()) {
 					cmds.addAll(MyBlocksConfig.getLeftSneakCommands(id));
-					event.setCancelled(true);
+					// event.setCancelled(true);
 				}
 			} else {
 				MyBlocksUtils.playSound(player, id, SoundType.LEFT);
 				
 				if (!MyBlocksConfig.getLeftCommands(id).isEmpty()) {
 					cmds.addAll(MyBlocksConfig.getLeftCommands(id));
-					event.setCancelled(true);
+					// event.setCancelled(true);
 				}
 			}
 			break;
@@ -70,7 +70,7 @@ public class ClickHandler implements Listener {
 				
 				if (!MyBlocksConfig.getRightSneakCommands(id).isEmpty()) {
 					cmds.addAll(MyBlocksConfig.getRightSneakCommands(id));
-					event.setCancelled(true);
+					// event.setCancelled(true);
 				}
 			} else {
 				MyBlocksUtils.playSound(player, id, SoundType.RIGHT);

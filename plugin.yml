@@ -14,5 +14,4 @@ permissions:
     default: op
     description: Give access to do all commands
   MyBlocks.Gui:
-    default: true
     description: Give access to Gui commands
